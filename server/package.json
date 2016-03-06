@@ -1,0 +1,48 @@
+{
+  "name": "embedded-ctf-server",
+  "version": "0.0.1",
+  "description": "WPI ECTF Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests.js",
+    "start": "nodemon -L -e js,txt,json index.js"
+  },
+  "config":{
+    "debugAll": false,
+    "debugRegistration": false,
+    "debugUnlock": false,
+    "debugPinChange": false,
+    "debugSignature": false,
+    "debugRateLimiting": false,
+    "logRequests": false,
+    "noApproval": false,
+    "masterPin": "88888888"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nileshp87/ectf.git"
+  },
+  "keywords": [
+    "ectf",
+    "security",
+    "beaglebone",
+    "mitre"
+  ],
+  "author": "WPI",
+  "bugs": {
+    "url": "https://github.com/nileshp87/ectf/issues"
+  },
+  "homepage": "https://github.com/nileshp87/ectf#readme",
+  "license": "Apache",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "redis": "^2.4.2",
+    "node-rsa": "~0.3.2"
+  },
+  "devDependencies": {
+    "mocha": "~2.4.5",
+    "should": "~8.2.1",
+    "supertest": "~1.1.0"
+  }
+}
