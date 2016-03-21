@@ -351,6 +351,9 @@ def main():
 #        logger.close()
 
 if __name__ == '__main__':
+    time.sleep(5)
+    os.system('sh program_avr.sh')
+    time.sleep(5)
     while True:
         try:
             main()
