@@ -1,10 +1,10 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 22 22:34:46 2016
 
 """
 
-#!/usr/bin/env python
 import json
 import socket
 import smbus
